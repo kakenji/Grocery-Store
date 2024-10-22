@@ -1,4 +1,6 @@
 $gray-300: rgba(70, 70, 70, .1);
+$light-green-300: rgb(107, 178, 82);
+$gray-500: rgb(116, 116, 116);
 
 * {
     box-sizing: border-box;
@@ -8,6 +10,7 @@ $gray-300: rgba(70, 70, 70, .1);
 
 .container {
     font-family: 'Nunito';
+    width: 100%;
 }
 
 .top-nav-bar {
@@ -88,3 +91,66 @@ $gray-300: rgba(70, 70, 70, .1);
         }
     }
 }
+
+
+// -- ---------------------- NAV BAR --------------------------------  -->
+
+.first-window {
+    background-image: url(/Grocery-Store/images/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 743px;
+    // font-weight: 300;
+    // background-size: cover;
+
+    section {
+        h1 {
+            width: 724px;
+            height: 192px;
+            border: 2px solid red;
+            font-size: 5rem;
+            font-family: 'Inter';
+            font-weight: 300;
+        }
+
+        h2 {
+            width: 406px;
+            height: 48px;
+            border: 2px solid blue;
+            color: $gray-500;
+            font-weight: 500;
+        }
+
+        .organic {
+            color: $light-green-300;
+            font-weight: 700;
+        }
+
+        .doorsteps {
+            font-weight: 700;
+        }
+        
+        button {
+            border-radius: 40px;
+            height: 57.6px;
+            font-size: 1rem;
+            font-family: 'Inter';
+        }
+
+        .startshop-btn {
+            width: 189.6px;
+            background-color: $light-green-300;
+            color: #fff;
+            border: none;
+        }
+
+        .joinnow-btn {
+            width: 133.6px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
+

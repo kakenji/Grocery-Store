@@ -6,6 +6,7 @@
 
 .container {
   font-family: "Nunito";
+  width: 100%;
 }
 
 .top-nav-bar {
@@ -71,6 +72,54 @@
 }
 .top-nav-bar .nav-icons .n-icon {
   margin-left: 20px;
+}
+
+.first-window {
+  background-image: url(/Grocery-Store/images/banner-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 743px;
+}
+.first-window section h1 {
+  width: 724px;
+  height: 192px;
+  border: 2px solid red;
+  font-size: 5rem;
+  font-family: "Inter";
+  font-weight: 300;
+}
+.first-window section h2 {
+  width: 406px;
+  height: 48px;
+  border: 2px solid blue;
+  color: rgb(116, 116, 116);
+  font-weight: 500;
+}
+.first-window section .organic {
+  color: rgb(107, 178, 82);
+  font-weight: 700;
+}
+.first-window section .doorsteps {
+  font-weight: 700;
+}
+.first-window section button {
+  border-radius: 40px;
+  height: 57.6px;
+  font-size: 1rem;
+  font-family: "Inter";
+}
+.first-window section .startshop-btn {
+  width: 189.6px;
+  background-color: rgb(107, 178, 82);
+  color: #fff;
+  border: none;
+}
+.first-window section .joinnow-btn {
+  width: 133.6px;
+  border: none;
+  background-color: #000;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
