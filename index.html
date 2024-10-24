@@ -26,12 +26,20 @@
     <link rel="stylesheet" href="css/styles.css">
     <script href="script.js"></script>
 </head>
+
 <body>
     <div class="container">
+
+        <ul class="left-nav-bar">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+
         <div class="top-nav-bar">
             <img src="images/organic-logo.svg" alt="">
-            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="gray" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
-        
+            <button id="menu-btn" onclick="openMenu()"><svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="gray" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg></button>
+            
             <form action="index.html" method="post">
                 <select id="categories">
                     <option value="All categories" selected>All Categories</option>
@@ -68,18 +76,18 @@
         
             <section>
                 <h1><span class="organic">Organic</span> Foods at your <span class="doorsteps">Doorsteps</span></h1>
-                <h2>Dignissim massa diam elementum</h2>
+                <h2>Dignissim massa diam elementum.</h2>
                 <button class="startshop-btn">START SHOPPING</button>
                 <button class="joinnow-btn">JOIN NOW</button>
 
                 <ul>
-                    <li>14k+
+                    <li class="li-item">14k+
                         <p>PRODUCT VARIETIES</p>
                     </li>
-                    <li>50k+
+                    <li class="xli-item">50k+
                         <p>HAPPY CUSTOMERS</p>
                     </li>
-                    <li>10+
+                    <li class="li-item">10+
                         <p>STORE LOCATIONS</p>
                     </li>
                 </ul>
@@ -87,5 +95,7 @@
         </div>
     
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>

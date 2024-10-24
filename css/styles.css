@@ -7,6 +7,17 @@
 .container {
   font-family: "Nunito";
   width: 100%;
+  backdrop-filter: blur(0);
+}
+.container .left-nav-bar {
+  background: black;
+  height: 100vh;
+  width: 0px;
+  position: fixed;
+  transition: 0.3s;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
 }
 
 .top-nav-bar {
@@ -19,7 +30,12 @@
   height: 2.5rem;
   margin-left: 16px;
 }
-.top-nav-bar #menu-icon {
+.top-nav-bar button {
+  background: none;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
   margin-left: 16px;
 }
 .top-nav-bar form {
@@ -75,24 +91,30 @@
 }
 
 .first-window {
-  background-image: url(/Grocery-Store/images/banner-1.jpg);
+  background-image: url(/images/banner-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 743px;
 }
+.first-window section {
+  padding-top: 96px;
+  margin-left: 20px;
+}
 .first-window section h1 {
   width: 724px;
   height: 192px;
-  border: 2px solid red;
   font-size: 5rem;
   font-family: "Inter";
   font-weight: 300;
+  letter-spacing: -3.2px;
 }
 .first-window section h2 {
-  width: 406px;
+  margin-top: 16px;
+  font-size: 1.6rem;
+  letter-spacing: 0.48px;
+  width: 420px;
   height: 48px;
-  border: 2px solid blue;
   color: rgb(116, 116, 116);
   font-weight: 500;
 }
@@ -102,8 +124,10 @@
 }
 .first-window section .doorsteps {
   font-weight: 700;
+  color: rgb(33, 37, 41);
 }
 .first-window section button {
+  margin-top: 32px;
   border-radius: 40px;
   height: 57.6px;
   font-size: 1rem;
@@ -116,10 +140,37 @@
   border: none;
 }
 .first-window section .joinnow-btn {
+  margin-left: 21.16px;
   width: 133.6px;
   border: none;
-  background-color: #000;
+  background-color: rgb(33, 37, 41);
   color: #fff;
+}
+.first-window section ul {
+  display: flex;
+  margin-top: 48px;
+  list-style-type: none;
+  font-family: "Inter";
+}
+.first-window section li {
+  font-size: 40px;
+  font-weight: 700;
+}
+.first-window section .li-item {
+  display: flex;
+}
+.first-window section p {
+  width: 100px;
+  margin-left: 23px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  margin-right: 42px;
+  font-size: 16px;
+}
+.first-window section .xli-item p {
+  width: 180px;
+  transform: translateX(-11%);
 }
 
 /*# sourceMappingURL=styles.css.map */
